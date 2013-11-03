@@ -1,0 +1,89 @@
+.header-logo {
+    float: left;
+    margin: 40px 0;
+    margin-top: 20px;
+
+    img {
+        height: 120px;
+    }
+}
+
+.fb-like-wrapper {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+}
+
+.header {
+    position: relative;
+    padding-bottom: 0;
+
+    nav, nav ul {
+        float: left;
+        width: 100%;
+    }
+
+    nav {
+        margin-top: 20px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            border: 1px solid #ddd;
+
+            li {
+                float: left;
+                display: block;
+                margin: 0;
+                padding: 0;
+
+                list-style: none;
+
+                line-height: 1;
+
+                a {
+                    float: left;
+                    display: block;
+                    padding: 20px 40px;
+                    border-right: 1px solid #ddd;
+
+                    text-decoration: none;
+                    font-family: 'Dancing Script';
+                    font-size: 20px;
+
+                    color: @maveGray;
+
+                    .transition(all 0.2s);
+                }
+
+                &.s-is-selected a, a:hover {
+                    background: #eee;
+
+                    color: @maveGreen;
+                }
+            }
+        }
+    }
+}
+
+
+.ueber-mave-img-wrapper {
+    padding-left: 30px;
+
+    img {
+        width: 100%;
+        display: block;
+
+        .border-radius(2px);
+    }
+
+
+    p {
+        margin: 0;
+        margin-top: 2px;
+
+        font-size: 14px;
+    }
+}

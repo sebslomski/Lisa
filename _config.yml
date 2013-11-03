@@ -1,0 +1,17 @@
+exclude: [GruntFile.js, .git, .gitignore, node_modules, package.json]
+menu:
+    - id: home
+      name: Home
+      path: '/'
+
+    - id: produkte
+      name: Produkte
+      path: '/produkte'
+
+    - id: ueber-mave
+      name: Über MAVE
+      path: '/ueber-mave'
+
+    - id: impressum
+      name: Impressum
+      path: '/impressum'

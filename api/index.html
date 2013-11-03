@@ -1,0 +1,51 @@
+---
+layout: default
+title: Shop
+id: shop
+---
+
+<div class="products">
+    <ul class="products-categories"></ul>
+</div>
+
+<script src="/js/vendor/dawanda.js"></script>
+<script>
+    var dawanda = {
+        apiKey: 'e80cf76d4442d0fb6ad237e8c8b57d0bb806574d',
+        username: 'mave-design'
+    };
+
+
+    $(function() {
+        var api = new DaWanda.API(dawanda.apiKey, 'de');
+
+        var handlers = {
+            shopDetailSuccess: function(res) {
+                var categories = res.result.shop.shop_categories;
+                var items = [];
+
+                $.each(categories, function() {
+                    items.push('<li id="' + this.id + '">' + this.name + '</li>');
+                });
+
+                $('.products-categories').append(items);
+
+                $('.products-categories li').on('click', function() {
+                    api.getProductsForShopCategory(this.id, {
+                        onSuccess: handlers.productsForShopCategorySuccess,
+                        params: {
+                            per_page: 100
+                        }
+                    });
+                });
+            },
+            productsForShopCategorySuccess: function(res) {
+                console.log(res);
+            }
+        };
+
+        api.getShopDetails(dawanda.username, {
+            onSuccess: handlers.shopDetailSuccess
+        });
+    });
+</script>

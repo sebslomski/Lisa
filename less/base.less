@@ -1,0 +1,66 @@
+/* http://chir.ag/projects/name-that-color/ */
+@maveGreen: #3E9653;
+@maveGray: #666;
+
+
+@maxWidth: 960px;
+
+
+.transition(@val) {
+    transition: @val;
+    -webkit-transition: @val;
+    -moz-transition: @val;
+    -ms-transition: @val;
+}
+
+.border-radius(@val) {
+    border-radius: @val;
+    -webkit-border-radius: @val;
+    -moz-border-radius: @val;
+    -ms-border-radius: @val;
+}
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Lustria", georgia, serif;
+    line-height: 1.6;
+
+    background-image: url(/images/pattern@2x.png);
+    background-size: 200px;
+
+    color: @maveGray;
+}
+
+.content-wrapper {
+    max-width: @maxWidth;
+    margin: 30px auto;
+}
+
+.content {
+    width: 100%;
+    float: left;
+    padding: 30px;
+
+    background: #fff;
+}
+
+
+h2 {
+    margin: 0;
+
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+
+.pure-g-r [class*="pure-u"] {
+    font-family: "Lustria", georgia, serif;
+}

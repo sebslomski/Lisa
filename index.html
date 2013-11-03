@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+id: home
+---
+
+<h2>Herzlich Willkommen</h2>
+<p>bla bla bla</p>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://de.dawanda.com/widget/v2/dawanda-0.1.0.js"></script>
+<script type="text/javascript" src="http://de.dawanda.com/widget/v2/widget.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    new DaWanda.Widget({ 
+      borderWidth:"10",
+      imageVersion:"listview",
+      autoSlide:"1",
+      hideLogo:"false",
+      language:"de",
+      title:"MAVE-Design",
+      hideProductInformation:"false",
+      sourceType:"Shop",
+      linkColor:"#3e9653",
+      titleFontSize:"12",
+      innerBackgroundColor:"#FFFFFF",
+      backgroundColorTop:"#ddddd",
+      backgroundColorBottom:"#FFFFFF",
+      cols:"5",
+      textColor:"#666666",
+      backgroundPattern:"",
+      rows:"2",
+      sourceId:"1371018",
+      uuid:"09375bf2b3"
+    }).render();
+  });
+  jQuery.noConflict();
+</script>
