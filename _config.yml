@@ -3,15 +3,19 @@ menu:
     - id: home
       name: Home
       path: '/'
+      target: '_self'
 
     - id: produkte
       name: Produkte
-      path: '/produkte'
+      path: 'https://www.etsy.com/de/shop/MAVEDesign'
+      target: '_blank'
 
     - id: ueber-mave
       name: Über MAVE
       path: '/ueber-mave'
+      target: '_self'
 
     - id: impressum
       name: Impressum
       path: '/impressum'
+      target: '_self'

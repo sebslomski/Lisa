@@ -39,7 +39,7 @@
                 <nav>
                     <ul>
                         {% for item in site.menu %}
-                            <li {% if page.id == item.id %}class="s-is-selected"{% endif %}><a href="{{ item.path }}">{{ item.name }}</a></li>
+                            <li {% if page.id == item.id %}class="s-is-selected"{% endif %}><a href="{{ item.path }}" target="{{ item.target }}">{{ item.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </nav>
